@@ -1,0 +1,37 @@
+#contact {
+    display: flex;
+}
+
+.button {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    background-color: var(--highlight);
+    padding: 15px;
+    border-radius: 10px;
+    gap: 10px;
+    width: 250px;
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.text h4 {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+@media (min-width:1024px) {
+    #contact {
+        justify-content: space-around;
+    }
+
+.contact {
+    display: flex;
+    gap: 50px;
+}
+
+.whatsapp {
+    width: 500px;
+}}
