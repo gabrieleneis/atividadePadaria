@@ -25,6 +25,7 @@ nav {
 .logo {
     font-size: 20px;
     color: var(--logo);
+    cursor: pointer;
 }
 
 .container {

@@ -3,12 +3,21 @@
     padding: 30px;
 }
 
+#footer a:hover {
+    text-decoration: underline;
+} 
+
 ul li {
     list-style: none;
 }
 
 a {
     text-decoration: none;
+}
+
+.social img:hover {
+    transition: all 0.4s;
+    transform: translateY(4px);
 }
 
 @media (min-width:1024px) {
