@@ -16,7 +16,7 @@
     content: "";
     height: 100%;
     width: 100%;
-    background: var(--highlight);
+    background: var(--cor-secundaria);
     position: absolute;
     top: 8.3%;
     left: -5%;
@@ -68,4 +68,4 @@
 @media (min-width:1200px) {
     #about p {
         max-width: 500px;
-    }{}
+    }}

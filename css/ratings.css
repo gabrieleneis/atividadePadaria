@@ -1,4 +1,9 @@
 @media (min-width:1024px) {
 #rating {
     display: flex;
-}}
+}
+
+.col {
+    padding: 100px;
+}
+}

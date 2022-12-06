@@ -5,12 +5,13 @@
 }
 
 :root {
-    --logo: #744c24;
-    --highlight: #9b6b43;
-    --title: #8e5431;
-    --footer: #c98860;
-    --popup: #EEF2E6;
-    --title-carte: #483838;
+    --logo: #8d2b00;
+    --cor-header: #b55119;
+    --cor-primaria: #545e45;
+    --title: #1f2d16;
+    --buttons: #78704c;
+    --cor-secundaria: #1f2d16;
+    --popup: #ffefcd;
 }
 
 html {
@@ -29,11 +30,7 @@ h2 {
     color: var(--title);
 }
 
-.daily {
-    margin-top: 72px;
-}
-
-.logo {
+.logo, .sec {
     font-family: 'Acme', sans-serif;
 }
 

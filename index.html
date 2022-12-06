@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./img/logo.png">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title>TECO Bakery</title>
@@ -18,11 +19,11 @@
             <div class="logo">TECO <span>Bakery</span></div>
             <div class="menu">
                 <ul class="grid">
-                    <li class="title" id="daily"><a href="">Cardápio diário</a></li>
-                    <li class="title" id="everyday"><a href="">Produtos Fixos</a></li>
-                    <li class="title" id="about"><a href="">Sobre nós</a></li>
-                    <li class="title" id="rating"><a href="">Avaliações</a></li>
-                    <li class="title" id="contact"><a href="">Contato</a></li>
+                    <li class="title" href=""><a href="#daily">Cardápio diário</a></li>
+                    <li class="title" href=""><a href="#everyday">Produtos Fixos</a></li>
+                    <li class="title" href=""><a href="#about">Sobre nós</a></li>
+                    <li class="title" href=""><a href="#rating">Avaliações</a></li>
+                    <li class="title" href=""><a href="#contact">Contato</a></li>
                 </ul>
             </div>
             <div class="toggle icon-menu"><img src="./img/menu.png" alt=""></div>
@@ -30,23 +31,21 @@
         </nav>
     </header>
 
-    <section id="daily" class="daily">
-        <h2>Produtos Diários</h2>
+    <section id="daily">
+        <h2 class="title sec">Recém Saídos do Forno</h2>
         <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 9</div>
-
-
+            <div id="promotion" class="swiper-wrapper">
+                    
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
-          </div>
+        </div>
     </section>
 
     <div class="dividerOne"></div>
     
     <section id="everyday">
-        <h2 class="">Produtos Fixos</h2>
+        <h2 class="title sec">Nosso dia-a-dia</h2>
         <div class="container cont_carte">
             <div class="carte back_c1">
                 <div class="tittle_carte">
@@ -61,7 +60,7 @@
                         <div class="popup-content">
                             <h2>Pães</h2>
                             <div class="dividerOne"></div>
-                            <div class="entry"> 
+                            <div class="entry">
                                 <p><strong>PÃES: </strong></p>
                                 <ul>
                                     <li>Pão Francês</li>
@@ -71,7 +70,7 @@
                                     <li>Pão de Bauru / Hamburguer</li>
                                     <li>Pão de Cachorro Quente</li>
                                     <li>Pão de Cachorro de Aniversário</li>
-                                    <li>Pão Massinha Doce / Fofinho</li>
+                                    <li>Pão Massinha Doce / Bauruzinho</li>
                                     <li>Fofinhos Soft Bread</li>
                                     <li>Bisnaguinhas Soft Bread</li>
                                     <li>Pão Doce Especial</li>
@@ -82,10 +81,10 @@
                                     <li>Pão Sanduichão de Leite</li>
                                     <li>Pão Descascado para Torta Fria</li>
                                 </ul>
-                                    <p><strong>PÃES INTEGRAIS: </strong></p>
-                                    <ul>
-                                    <li>Pão Francês Integral</li>
-                                    <li>Pão Integral/li>
+                                <p><strong>PÃES INTEGRAIS: </strong></p>
+                                <ul>
+                                    <li>Pão Francês Integral </li>
+                                    <li>Pão Integral</li>
                                     <li>Pão Integral Soft Bread</li>
                                     <li>Pão de Centeio Soft Bread</li>
                                     <li>Pão Sanduichão Integral</li>
@@ -95,8 +94,8 @@
                                     <li>Pão Campanha</li>
                                     <li>Pão Europeu</li>
                                 </ul>
-                                    <p><strong>PÃES ESPECIAIS: </strong></p>
-                                    <ul>
+                                <p><strong>PÃES ESPECIAIS: </strong></p>
+                                <ul>
                                     <li>Pão de Milho</li>
                                     <li>Pão Bauruzinho de Milho</li>
                                     <li>Pão de Aipim</li>
@@ -106,15 +105,14 @@
                                     <li>Pão Torrado</li>
                                     <li>Farinha de Pão</li>
                                     <li>Rosca de Polvilho</li>
-                                    <li>Rosquinha de Polvilho</li>
-                                </ul>
-                                            
+                                    <li>Rosquinha de Polvilho </li>
+                                </ul>          
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+        
             <div class="carte back_c2">
                 <div class="tittle_carte">
                     <h2>Cucas e Bolos</h2>
@@ -138,7 +136,7 @@
                                     <li>Panetone</li>
                                     <li>Chocotone</li>
                                     <li>Panetone Trufado</li>
-                                    <liChocotone Trufado</li>
+                                    <li>Chocotone Trufado</li>
                                     <li>Colomba Pascal</li>
                                     <li>Colomba Trufada</li>
                                 </ul>
@@ -288,7 +286,6 @@
                 </div>
             </div>
 
-        </div>
     </section>
     
     <div class="dividerTwo"></div>
@@ -296,10 +293,10 @@
     <section id="about">
         <div class="about container">
             <div class="image"><img src="./img/bakeryIntern.jpg" alt=""></div>
-            <p class="title">Sobre Nós</p>
+            <p class="title sec">Sobre Nós</p>
             <p>Nossa padaria foi construída acima do esforço dos nossos colaboradores, visando o sonho de proporcionar bons momentos para o público.</p><p>Começamos em uma casinha no Bairro Glória, alugada da tia da dona da TECO. De lá, os vizinhos contaram para os vizinhos do talento de Clarissa Lesso e, em pouco tempo, tínhamos clientes regulares. Em menos de dois anos, a TECO mudou de endereço e, desde então, tem um compromisso com nossos clientes no Bairro Planalto!</p></div>
         <div class="about container">
-            <p class="title">Nossa CEO</p>
+            <p class="title sec">Nossa CEO</p>
             <p>Conheça Clarissa Lesso, nossa CEO. Ela é a chefe confeiteira responsável por nossos produtos mais memoráveis! Junto do resto da empresa, Lesso visa um futuro cheio de produtos de qualidade e memórias boas.</p>
         <div class="image"><img src="./img/bakeryCEO.png" alt=""></div></div>
     </section>
@@ -307,13 +304,13 @@
     <div class="dividerOne"></div>
 
     <section id="rating">
-        <div class="container">
-            <p class="title">Gazeta de Santa Rosa, 22 de set. 2021</p>
+        <div class="container col">
+            <p class="title sec">Gazeta de Santa Rosa, 22 de set. 2021</p>
             <p>Em reportagem oficial, a Gazeta de Santa Rosa, a jornalista Leonora Weems classificou a padaria como "um local calmo em meio à correria da cidade."</p>
         </div>
-        <div class="container">
-            <p class="title">Gazeta de Santa Rosa, 22 de set. 2021</p>
-            <p>Em reportagem oficial, a Gazeta de Santa Rosa, a jornalista Leonora Weems classificou a padaria como "um local calmo em meio à correria da cidade."</p>
+        <div class="container col">
+            <p class="title sec">Gazeta de Santa Rosa, 20 de out. 2020</p>
+            <p>Para a Gazeta de Santa Rosa, o prefeito da cidade admitiu: "se não visito a padaria para minha primeira refeição do dia, me sinto incompleto."</p>
         </div>
     </section>
 
@@ -329,7 +326,7 @@
                     Entre em contato</a>
             </div>
             <div class="text">
-                <h4 class="title">Padaria TECO</h4>
+                <h4 class="title sec">Padaria TECO</h4>
                 <h4>Rua das Andradas, 45 - B. Planalto - Santa Rosa</h4>
                 <h4>Fone (55) 3512-9999</h4>
             </div>
@@ -341,25 +338,34 @@
             <div class="menu">
                 <div class="logo">TECO <span>Bakery</span></div>
                 <ul class="grid">
-                    <li class="title" id="daily"><a href="">Cardápio diário</a></li>
-                    <li class="title" id="everyday"><a href="">Produtos Fixos</a></li>
-                    <li class="title" id="about"><a href="">Sobre nós</a></li>
-                    <li class="title" id="rating"><a href="">Avaliações</a></li>
-                    <li class="title" id="contact"><a href="">Contato</a></li>
+                    <li class="title" href=""><a href="#daily">Cardápio diário</a></li>
+                    <li class="title" href=""><a href="#everyday">Produtos Fixos</a></li>
+                    <li class="title" href=""><a href="#about">Sobre nós</a></li>
+                    <li class="title" href=""><a href="#rating">Avaliações</a></li>
+                    <li class="title" href=""><a href="#contact">Contato</a></li>
                 </ul>
             </div>
 
             <div class="social">
-                <a href=""><img src="./img/instagram.png" alt=""></a>
-                <a href=""><img src="./img/facebook.png" alt=""></a>
-                <a href=""><img src="./img/youtube.png" alt=""></a>
-                <a href=""><img src="./img/whatsapp.png" alt=""></a>
+                <a class="link" href="">
+                   <i class="fab fa-instagram"> <img src="./img/instagram.png" alt=""></i>
+                </a>
+                <a class="link" href="">
+                    <i class="fab fa-facebook"> <img src="./img/facebook.png" alt=""></i>
+                </a>
+                <a class="link" href="">
+                    <i class="fab fa-youtube"> <img src="./img/youtube.png" alt=""></i>
+                </a>
+                <a class="link" href="">
+                    <i class="fab fa-whatsapp"> <img src="./img/whatsapp.png" alt=""></i>
+                </a>
             </div>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/products.js"></script>    
+    <script src="./js/products.js"></script>   
+    <script src="./js/daily.js"></script>
 </body>
 </html>

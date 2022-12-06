@@ -1,5 +1,5 @@
 #footer {
-    background-color: var(--footer);
+    background-color: var(--cor-primaria);
     padding: 30px;
 }
 
@@ -15,9 +15,94 @@ a {
     text-decoration: none;
 }
 
-.social img:hover {
-    transition: all 0.4s;
-    transform: translateY(4px);
+#footer .brand{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#footer .brand .menu{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#footer .brand .menu .grid{
+    padding: 0;
+}
+
+#footer .brand .menu .grid li {
+    margin-bottom: 10px;
+}
+
+#footer .brand .menu .grid li a{
+    font-size: 14px;
+    color: var(--cor-header);
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+.social .link{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: var(--buttons);
+    box-shadow: 0 5px 15px -5px rgb(71, 49, 1);
+    margin-left: 10px;
+    border-radius: 30%;
+    overflow: hidden;
+    position: relative;
+    color: #040607;
+}
+
+.social .link i{
+    position: relative;
+    z-index: 4;
+    line-height: 70px;
+    font-size: 26px;
+    transition: 0.3s ease-in-out;
+}
+
+
+.social .link::before{
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    background: linear-gradient(var(--text-light), var(--title-carte)) ;
+    transform: rotate(45deg);
+    left: -100%;
+    top: 90%;
+}
+
+.social .link:hover::before{
+    animation: onHover 0.8s 1;
+    left: -25%;
+    top: -20%;
+}
+
+@keyframes onHover{
+    0%{
+        left: -90%;
+        top: 90%;
+    }
+
+    50%{
+        left: 40%;
+        top: -20%;
+    }
+
+    100%{
+        left: -30%;
+        top: -25%;
+    }
 }
 
 @media (min-width:1024px) {
@@ -28,8 +113,9 @@ a {
 
     .social {
         display: flex;
-        align-items: flex-end;
+        flex-direction: row;
         gap: 15px;
+        text-align: center;
     }
 
 }

@@ -46,14 +46,14 @@ nav ul li a {
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: var(--highlight);
+    color: var(--cor-header);
 }
 
 nav ul li a::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: var(--highlight);
+    background: var(--cor-header);
     position: absolute;
     left: 0;
     bottom: -5px;

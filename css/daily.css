@@ -1,0 +1,48 @@
+#daily{
+    margin-top: 100px;
+}
+
+#daily .title{
+    font-size: 40px;
+    text-align: center;
+    padding-bottom:3rem;
+}
+
+#promotion .cardsDaily{
+    display: grid;
+    padding: 20px;
+    grid-gap: 40px; 
+}
+
+#promotion .cardDaily{
+    background-color: var(--cor-primaria);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(88, 99, 75, 0.219);
+}
+
+#promotion .cardDaily .topDaily{
+    position: relative;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+}
+
+#promotion .cardDaily .topDaily img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+#promotion .cardDaily .detailsDaily{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+#promotion .cardDaily .detailsDaily>h3{
+    color: var(--cor-secundaria);
+    font-size: 30px;
+    margin: 10px 0 15px 0;
+}
+
+#promotion .cardDaily .detailsDaily>p{
+    font-size: 15px;
+    line-height: 45px;
+}
