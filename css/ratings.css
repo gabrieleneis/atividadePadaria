@@ -4,6 +4,16 @@
 }
 
 .col {
-    padding: 100px;
+    padding: 50px;
 }
+}
+
+@media (min-width:1440px){
+    #rating {
+        justify-content: space-around;
+    }
+
+    .col {
+        max-width: 600px;
+    }
 }

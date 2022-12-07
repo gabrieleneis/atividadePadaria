@@ -39,7 +39,6 @@ a {
 
 #footer .brand .menu .grid li a{
     font-size: 14px;
-    color: var(--cor-header);
 }
 
 .social{
@@ -76,7 +75,7 @@ a {
     position: absolute;
     width: 130%;
     height: 130%;
-    background: linear-gradient(var(--text-light), var(--title-carte)) ;
+    background: linear-gradient(var(--cor-secundaria), var(--cor-primaria)) ;
     transform: rotate(45deg);
     left: -100%;
     top: 90%;
