@@ -1,11 +1,11 @@
 const date = new Date().getDay();
-var combo1 = createPromotion("Salgados","Pastel","CARNE") + createPromotion("TortasDoces","Cuca","CHOCOLATE");
-var combo2 = createPromotion("Salgados","Pastel","FRANGO") + createPromotion("TortasDoces","Cuca","NAPOLITANA");
-var combo3 = createPromotion("Salgados","Pastel","CERNA") + createPromotion("TortasDoces","Cuca","chocolate");
-var combo4 = createPromotion("Salgados","pastel","CERNA") + createPromotion("TortasDoces","Cuca","chocolate");
-var combo5 = createPromotion("Salgados","Pastel","CERNA") + createPromotion("TortasDoces","Cuca","chocolate");
-var combo6 = createPromotion("Salgados","Pastel","CERNA") + createPromotion("TortasDoces","Cuca","chocolate");
-var combo7 = createPromotion("Salgados","Pastel","CARNE") + createPromotion("TortasDoces","Cuca","chocolate7");
+var combo1 = createPromotion("Salgados","Pastel de carne","Clássica combinação de massa sequinha e carne moída") + createPromotion("TortasDoces","Pastel Romeu e Julieta","A clássica junção de queixo e goiabada em um pastel sequinho.") + createPromotion("Salgados","Churrasquinho de semana","Espetinho de carne assada pra te lembrar do final de semana.") + createPromotion("TortasDoces","Pizza sensação","Massa crocante, cobertura de morango e chocolate e borda recheada de mousse de morango.");
+var combo2 = createPromotion("Salgados","Pizza brisa do mar","Uma pizza que leva o melhor do frescor do mar com frutos do mar e nosso molho especial.") + createPromotion("TortasDoces","Pedacinho do céu","Porção de tamanho personalizado de bolo de cenoura e cobertura macia de chocolate") + createPromotion("Salgados","Canoinhas","Kit com dez canoinhas de sabores sortidos.") + createPromotion("TortasDoces","Festinha escondida","Kit de dez docinhos de festa sortidos.");
+var combo3 = createPromotion("Salgados","Cachorro quente","Escolha os condimentos a serem colocados.") + createPromotion("TortasDoces","Pizza floresta negra","Pizza de chocolate amargo") + createPromotion("Salgados","Lembrança de inverno","Fondue com vinho branco.") + createPromotion("TortasDoces","Frescor de verão","Torta de sorvete de flocos");
+var combo4 = createPromotion("Salgados","Pastel de carne","Clássica combinação de massa sequinha e carne moída") + createPromotion("TortasDoces","Pizza sensação","Massa crocante, cobertura de morango e chocolate e borda recheada de mousse de morango.") + createPromotion("Salgados","Pastel de carne","Clássica combinação de massa sequinha e carne moída") + createPromotion("TortasDoces","Pizza floresta negra","Pizza de chocolate amargo");
+var combo5 = createPromotion("Salgados","Lembrança de inverno","Fondue com vinho branco.") + createPromotion("TortasDoces","Pastel Romeu e Julieta","A clássica junção de queixo e goiabada em um pastel sequinho.") + createPromotion("Salgados","Churrasquinho de semana","Espetinho de carne assada pra te lembrar do final de semana.") + createPromotion("TortasDoces","Frescor de verão","Torta de sorvete de flocos");
+var combo6 = createPromotion("Salgados","Canoinhas","Kit com dez canoinhas de sabores sortidos.") + createPromotion("TortasDoces","Pizza floresta negra","Pizza de chocolate amargo") + createPromotion("Salgados","","") + createPromotion("TortasDoces","Festinha escondida","Kit de dez docinhos de festa sortidos.");
+var combo7 = createPromotion("Salgados","Cachorro quente","Escolha os condimentos a serem colocados.") + createPromotion("TortasDoces","Festinha escondida","Kit de dez docinhos de festa sortidos.") + createPromotion("Salgados","Pizza brisa do mar","Uma pizza que leva o melhor do frescor do mar com frutos do mar e nosso molho especial.") + createPromotion("TortasDoces","Frescor de verão","Torta de sorvete de flocos");
 
 
 var aplication = document.querySelector('#promotion');
@@ -33,36 +33,47 @@ function createPromotion(img, product, content){
   return`
   <div class="swiper-slide cardsDaily">
       <div class="cardDaily">
-          <div class="topDaily">
-              <img src="img/Carte-${img}.png" alt="">
-              <div class="promo"></div>
-          </div>
-          <div class="detailsDaily">
-              <h3>${product}</h3>
-              <p>${content}</p>
-          </div>
+        <div class="topDaily">
+            <img src="img/Carte-${img}.png" alt="">
+        </div>
+        <div class="detailsDaily">
+            <h3>${product}</h3>
+            <p>${content}</p>
+        </div>
       </div>
   </div>
   `
 }
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 4,
-    slidesPergroup: 4,
+    slidesPerView: 1,
+    slidesPergroup: 1,
     spaceBetween: 30,
     loop: true,
     loopFillGroupWithBlank: true,
-    autoplay: {
-        delay: 2900,
-        disableOnInteraction: false,
-      },
+    // autoplay: {
+    //     delay: 2900,
+    //     disableOnInteraction: false,
+    //   },
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".banner-nav-next",
+      prevEl: ".banner-nav-prev",
     },
+    keyboard: true,
+    breakpoints:{
+      768:{
+          slidesPerView:2,
+        },
+      1024:{
+        slidesPerView:3,
+      },
+      1440:{
+        slidesPerView:4,
+      }
+    }
   });
 

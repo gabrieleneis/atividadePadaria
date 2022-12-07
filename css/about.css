@@ -45,14 +45,17 @@
     max-width: 400px;
 }
 
+
+@media (min-width:768px) {
+#about .container {
+    padding: 3rem;
+}
+}
+
 @media (min-width:1024px) {
     #about {
         display: flex;
         justify-content: space-around;
-    }
-
-    #about .container {
-        padding: 5rem;
     }
 
     #about .image {
